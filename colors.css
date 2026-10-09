@@ -1,0 +1,126 @@
+.cool-colors {
+    -webkit-animation:name 15s infinite;
+}
+@keyframes name {
+    0% {color:red}
+    20% {color:#ff9933}
+    40% {color:yellow}
+    50% {color:#66ff33}
+    60% {color:aqua}
+    75% {color:blue}
+    80% {color:#cc33ff}
+    85% {color:#ff33cc}
+    100% {color:red}
+    
+}
+
+.cool-colors2 {
+    -webkit-animation:name 4s infinite;
+}
+@keyframes name {
+    0% {color:red}
+    20% {color:#ff9933}
+    40% {color:yellow}
+    50% {color:#66ff33}
+    60% {color:aqua}
+    75% {color:blue}
+    80% {color:#cc33ff}
+    85% {color:#ff33cc}
+    100% {color:red}
+    
+}
+/* I'm so proud of this */
+.additional-info {
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #66ff33;
+}
+
+
+.email:link {
+    color: crimson;
+}
+
+.email:visited {
+    color: #66ff33;
+}
+
+.email:hover {
+    color: aqua;
+}
+
+.email:active {
+    color: #ff33cc;
+}
+
+
+.things-made:link {
+    color: #ffff47;
+}
+
+.things-made:visited {
+    color: #66ff33;
+}
+
+.things-made:hover {
+    color: aqua;
+}
+
+.things-made:active {
+    color: #ff33cc;
+}
+
+.cool-submit {
+    background-color: aqua;
+    border: outset 3px #cc33ff 
+}
+
+.cool-submit:active {
+    background-color: #cc33ff;
+    border: inset 3px aqua;
+}
+
+.go-back {
+    background-color: yellow;
+    border: outset 3px red;
+}
+
+.go-back:active {
+    background-color: red;
+    border: inset 3px yellow;
+}
+
+.insts:link {
+    color: aqua;
+}
+
+.insts:visited {
+    color: red;
+}
+
+.insts:hover {
+    color: #ff33cc;
+}
+
+.insts:active {
+    color: yellow;
+}
+
+.lightbutton {
+    background-color: #8ce170;
+    border: outset 3px white;
+}
+
+.lightbutton:active {
+    background-color: white;
+    border: inset 3px #8ce170;
+}
+.darkbutton {
+    background-color: #1d1d8a;
+    border: outset 3px #000000;
+    color: white;
+}
+
+.darkbutton:active {
+    background-color: #000000;
+    border: inset 3px #1d1d8a;
+}

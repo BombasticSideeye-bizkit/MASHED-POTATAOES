@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    function myFunction() {
+        document.getElementById("demo").innerHTML = "Kindly submit something, please ☹.";
+}   
+</script>
+<link rel="stylesheet" href="colors.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Project</title>
+</head>
+
+<style>
+
+  ul { 
+list-style-type:none; 
+margin: 0; 
+padding: 0; 
+overflow: hidden; 
+background-color:#f1f1f1;
+
+  }
+    ul li {
+  float: left;
+    }
+
+ul li a {
+    display: block;
+    color:#0d4444;
+    text-align: center;
+    padding:14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #d9d9d9;
+    color: #0d0d45
+}
+
+img {
+    display: block;
+    margin: auto;
+    border: 5px outset #0d0d45;
+    border-color: #181881
+}
+</style>
+<body style="background-color: black;">
+    <header>
+       <nav class="navibar">
+        <ul class="navilinks">
+            <li><a href="#me info">Me Info</a></li>
+            <li><a href="#things">Things I did</a></li>
+            <li><a href="#find me">Find me</a></li>  
+        </ul>
+       </nav>
+    </header>
+    <br>
+    <section class="oreh">
+        <img src="me.png" alt="artist image" class="artist-img" width="180px" height="180px">
+         <h2 style="color: red; text-align: center;"><span class="cool-colors">Renesmee Karunungan Portfolio Thing</span></h2>
+         <p style="color: white; text-align: center;"> Extremely Human</p>
+         
+    </section>
+    <hr>
+    <section id="me info">
+        <h2 style="color: blue;">Me Info</h2>
+        <p style="color: white;">I am human. I plan to be human for some additional time.</p>
+        <h3 class="additional-info" style="color: magenta">Additional info:</h3>
+        <p style="color: white;">I do things that I like such as making music.</p>
+       </div>
+       <hr> 
+    </section>
+    <section id="things">
+        <h2 style="color: blue;">Things I did</h2>
+     
+       <p><a href="Instrumentals.html" style="text-decoration: none;" class="things-made">Instrumentals</a></p> 
+       <p><a href="Songs.html" style="text-decoration: none;" class="things-made">Songs</a></p>
+       <p><a href="drawings.html" style="text-decoration: none;" class="things-made">drawings</a></p>
+       <p><a href="photographs.html" style="text-decoration: none;" class="things-made">Photographs</a></p>
+        </div>
+        
+        </div>
+    </section><br>
+    <hr>
+
+    <section id="find me">
+        <h2 style="color: blue;">Find Me</h2>
+        <p style="color: white;"><font color="white">maybe in my house, or at school.</font></p>
+    
+        <p><font color="white">But you can contact me through</font><a href="email.html" style="text-decoration: none;" class="email"> email (click to see email).</a></p> 
+        <form onsubmit="event.preventDefault(); window.location.href='Thanks.html'">
+            <label for="uremail" style="color:white">Your email (optional):</label><br>
+            <input type="text" id="uremail" name="email" placeholder="email.example@gmail.com" size="50"><br><br>
+            <label for="message" style="color:white">Leave a message:</label><br>
+            <textarea title="You can put your message here" id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <label for="message-type" style="color:white">Type of message:<br>
+            <label for="message-type" style="color:white"><input type="radio" id="question" name="message-type" value="0" required>Question</label>
+            <label for="message-type" style="color:white"><input type="radio" id="regular" name="message-type" value="1" required>Regular</label><br><br>
+            <label for="extra" style="color:white">or choose an option:</label><br>
+            <select id="extra" name="extra">
+                <option value="option0">(this is optional)</option>
+                <option value="option1">I love your stuff</option>
+                <option value="option2">I like your stuff</option>
+                <option value="option3">I hate your stuff</option>
+            </select><br>
+            <p style="color:white" id="demo">Submit when ready.</p>
+            <input type="submit" class="cool-submit"value="Go bye bye (Submit)" onclick="myFunction()">
+        </form>
+    </section>
+</body>
+</html>

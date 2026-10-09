@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Songs</title>
+</head>
+<body style="background-color:black;">
+<h1 style="color:aqua">Songs</h1>
+<p style="color:white">...just kidding. I'm not showing you my songs, but here are some artists that I have listened to (or still listen to).</p><hr border="1px" style="border-color:aqua">
+<p style="color:white">(press button)</p>
+<button id="generateButton" class="darkbutton">Click to view a random artist name</button><br><br>
+<button onclick="window.location.href='StaAna_ICT9Emerald_Q1Project_Karunungan_Renesmee.html'"class="go-back">Back to Q1 Project</button>
+<script>
+    // Oh waw this is a lot of artists...
+    const artists = [
+        "The Beatles",
+        "Bill Wurtz",
+        "Steely Dan",
+        "Donald Fagen",
+        "Radiohead",
+        "Nirvana",
+        "Bread",
+        "The Carpenters",
+       "Stevie Wonder",
+        "The Smashing Pumpkins",
+        "Paul McCartney",
+        "MF Doom",
+        "Eminem",
+        "Tyler, the Creator",
+        "ABBA",
+        "Frédéric Chopin",
+        "Pyotr Ilyich Tchaikovsky",
+       "Claude Debussy",
+        "Arthur Rubinstein",
+        "Taylor Swift",
+        "Bruno Mars",
+        "Bee Gees",
+        "Limp Bizkit",
+        "Slipknot",
+        "Chet Baker",
+        "John Coltrane",
+        "Jacob Collier",
+        "System of A Down",
+        "Pink Floyd",
+        "Maurice Ravel",
+        "Sergei Rachmaninoff",
+        "Johann Sebastian Bach",
+        "Korn",
+        "Frank Sinatra",
+        "My Chemical Romance",
+        "Rage Against The Machine",
+        "Djo (Joe Keery)",
+        "Maurizio Pollini",
+        "Apo Hiking Society",
+        "Eraserheads",
+        "Linkin Park",
+        "Glenn Gould",
+        "Franz Liszt",
+        "Jim Croce",
+        "Gorillaz",
+        "Slipknot",
+        "Michael Jackson",
+        "Guns N' Roses",
+        "Skid Row",
+        "Metallica",
+        "Herbie Hancock",
+        "Green Day"
+];
+const generateButton = document.getElementById("generateButton")
+function generateRandomArtist() {
+    const randomIndex = Math.floor(Math.random() * artists.length);
+    const randomName = artists[randomIndex];
+  document.querySelector("p").innerHTML = `<span style="color:white;">I've listened to:</span><span class="cool-colors2"> ${randomName}.</span>`;
+}
+ generateButton.addEventListener("click", generateRandomArtist);
+
+</script>
+<link rel="stylesheet" href="colors.css">
+</body>
+</html>
